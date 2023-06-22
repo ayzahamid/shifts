@@ -1,24 +1,37 @@
-# README
+# Worker Shifts
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Setup Dependecies
 
-Things you may want to cover:
+* ruby 2.6.10
+* rails 6.1.7
+* postgresql
 
-* Ruby version
+#### Install RVM
+Install the right ruby version (currently 2.6.10):
+```shell
+  rvm install "ruby-2.6.10"
+```
 
-* System dependencies
+#### Check your Ruby version
 
-* Configuration
+```shell
+  ruby -v
+```
 
-* Database creation
+#### Install Database(postgresql)
 
-* Database initialization
+```shell
+  brew install postgresql
+  brew services start postgresql
+```
 
-* How to run the test suite
+## Run Setup
+* bundle install
+* rails db:create
+* rails db:schema:load or rails db:migrate
 
-* Services (job queues, cache servers, search engines, etc.)
+### Terminal Structure
 
-* Deployment instructions
-
-* ...
+* Tab 1: Github
+* Tab 2: Rails Console (rails c)
+* Tab 3: Rails Server (rails s)
